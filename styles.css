@@ -42,6 +42,8 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+
+    padding-top: 40px;
 }
 
 /*BANNER 1*/
@@ -174,6 +176,7 @@ nav ul li {
     gap: 15px;
 }
 
+/*
 .video-box {
     width: 200px;
     height: 200px;
@@ -185,6 +188,66 @@ nav ul li {
 }
 
 .video-box::before {
+    content: "▶";
+    color: white;
+    font-size: 32px;
+}
+*/
+
+/*primeira coluna*/
+
+
+.video-box-base-1 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.video-box-base-1::before {
+    content: "▶";
+    color: white;
+    font-size: 32px;
+}
+
+
+.video-box-cima-1 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    
+} 
+
+.video-box-cima-1::before {
+    content: "▶";
+    color: white;
+    font-size: 32px;
+}
+
+
+/*video do meio*/
+
+.video-box-meio {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.video-box-meio::before {
     content: "▶";
     color: white;
     font-size: 32px;
