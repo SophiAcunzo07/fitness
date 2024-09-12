@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "Outfit";
     src: url(fonts/Outfit-VariableFont_wght.ttf);
@@ -10,7 +12,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 1;
     box-sizing: border-box;
 }
 
@@ -19,17 +21,21 @@ body {
 }
 
 /*MENU*/
+
 nav {
     background-color: rgba(255, 175, 180, 60%);
+
+    z-index: 10;
 }
 
 nav ul img {
-    width: 100px;
+    width: 200px;
     height: 100px;
 
     display: flex;
-    align-items: center; 
+    align-items: center;
     text-align: center;
+
 }
 
 nav ul {
@@ -38,11 +44,25 @@ nav ul {
     justify-content: center;
 
     font-family: "Outfit";
+    font-size: 24px;
+
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
+nav ul a:hover {
+    color: #9C528B;
+    /* Cor do link ao passar o mouse */
+    text-decoration: underline;
+    /* Sublinhado ao passar o mouse */
 }
 
 nav ul li {
-    margin: 0 15px;
-
+    margin: 0 100px;
     padding-top: 40px;
 }
 
@@ -50,7 +70,6 @@ nav ul li {
 
 .hero-section {
     text-align: center;
-
     position: relative;
 }
 
@@ -61,26 +80,17 @@ nav ul li {
 
 .hero-section h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
     color: black;
 
     padding-top: 100px;
-
     font-family: "Melodrama";
 }
 
 /*SECAO 1*/
-
-/*
-.basico {
-    padding: 40px 0;
-    text-align: center;
-    background-color: rgba(255, 182, 193, 0.5);
-    margin-bottom: 30px;
-} */
 
 .basico h2 {
     font-size: 45px;
@@ -99,7 +109,6 @@ nav ul li {
     display: flex;
     justify-content: center;
     gap: 15px;
-
 }
 
 .video-box {
@@ -133,13 +142,23 @@ nav ul li {
     font-weight: normal;
 }
 
-.video-grid {
+.avancado p {
+    font-family: "Outfit";
+    font-weight: normal;
+    font-size: 18px;
+
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+
+.video-grid-ava {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-.video-box {
+.video-box-ava {
     width: 200px;
     height: 200px;
     background-color: black;
@@ -149,7 +168,40 @@ nav ul li {
     border-radius: 10px;
 }
 
-.video-box::before {
+.video-box-ava::before {
+    content: "▶";
+    color: white;
+    font-size: 32px;
+}
+
+
+.avancado2 p {
+    font-family: "Outfit";
+    font-weight: normal;
+    font-size: 18px;
+
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+
+.video-grid-ava2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.video-box-ava2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.video-box-ava2::before {
     content: "▶";
     color: white;
     font-size: 32px;
@@ -176,64 +228,21 @@ nav ul li {
     gap: 15px;
 }
 
-/*
-.video-box {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.video-box::before {
-    content: "▶";
-    color: white;
-    font-size: 32px;
-}
-*/
-
-/*primeira coluna*/
-
-
-.video-box-base-1 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-
-    position: relative;
-}
-
-.video-box-base-1::before {
-    content: "▶";
-    color: white;
-    font-size: 32px;
-}
-
-
 .video-box-cima-1 {
     width: 200px;
-    height: 200px;
+    height: 500px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
-    
-} 
+}
 
 .video-box-cima-1::before {
     content: "▶";
     color: white;
     font-size: 32px;
 }
-
 
 /*video do meio*/
 
@@ -248,6 +257,40 @@ nav ul li {
 }
 
 .video-box-meio::before {
+    content: "▶";
+    color: white;
+    font-size: 32px;
+}
+
+/*videos direita*/
+
+.video-box-direita-1 {
+    width: 200px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.video-box-direita-1::before {
+    content: "▶";
+    color: white;
+    font-size: 32px;
+}
+
+.video-box-direita-2 {
+    width: 200px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.video-box-direita-2::before {
     content: "▶";
     color: white;
     font-size: 32px;
