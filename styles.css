@@ -49,14 +49,11 @@ nav ul {
 nav ul a {
     color: black;
     text-decoration: none;
-    /* Remove o sublinhado */
 }
 
 nav ul a:hover {
     color: #9C528B;
-    /* Cor do link ao passar o mouse */
     text-decoration: underline;
-    /* Sublinhado ao passar o mouse */
 }
 
 nav ul li {
@@ -107,6 +104,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     gap: 15px;
+
 }
 
 .video-box {
@@ -125,23 +123,15 @@ nav ul li {
     font-size: 32px;
 }
 
-.basico h1 h6 h3 h4 h5 {
+
+.basico p {
     display: inline-block;
-    margin-right: 10px;
-    /* Espaçamento opcional */
 
     font-family: "Outfit";
     font-size: 15px;
-}
 
-.textos {
-    display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-
-
+    text-align: center;
+    width: 100%;
 }
 
 /*SECAO 2*/
@@ -318,17 +308,13 @@ nav ul li {
 .footer {
     position: relative;
     width: 100%;
-
 }
 
 .texto {
     position: absolute;
     top: 75%;
-    /* Centraliza verticalmente */
     left: 50%;
-    /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
-    /* Ajusta a centralização */
     color: black;
     text-align: center;
 }
@@ -336,22 +322,17 @@ nav ul li {
 .footer img {
     width: 100%;
     height: auto;
-
     display: block;
 }
 
 .footer h1 {
     font-family: "Outfit";
-
     text-align: center;
-
     margin: 0;
 }
 
 .footer p {
     font-family: "Outfit";
-
     text-align: center;
-
     margin: 0;
 }
