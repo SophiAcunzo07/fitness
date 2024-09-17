@@ -24,6 +24,12 @@ nav {
     background-color: rgba(255, 175, 180, 60%);
 
     z-index: 10;
+
+    border-radius:55px;
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 nav ul img {
