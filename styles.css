@@ -25,21 +25,24 @@ nav {
 
     z-index: 10;
 
-    border-radius:55px;
+    border-radius: 55px;
 
     position: absolute;
     top: 5%;
-    left: 5%;
+    left: 110px;
+
+    height: 100px;
 }
 
 nav ul img {
-    width: 200px;
-    height: 100px;
+    /* width: 200px; */
+    height: 130px;
 
     display: flex;
     align-items: center;
     text-align: center;
 
+    margin-top: -15px;
 }
 
 nav ul {
@@ -49,15 +52,44 @@ nav ul {
 
     font-family: "Outfit";
     font-size: 24px;
-
 }
 
-nav ul a {
+.botao1 {
     color: black;
     text-decoration: none;
 }
 
-nav ul a:hover {
+.botao2 {
+    color: #9C528B;
+    text-decoration: none;
+}
+
+.botao3 {
+    color: black;
+    text-decoration: none;
+}
+
+.botao4 {
+    color: black;
+    text-decoration: none;
+}
+
+.botao1:hover {
+    color: #9C528B;
+    text-decoration: underline;
+}
+
+.botao2:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.botao3:hover {
+    color: #9C528B;
+    text-decoration: underline;
+}
+
+.botao4:hover {
     color: #9C528B;
     text-decoration: underline;
 }
